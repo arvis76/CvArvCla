@@ -1,10 +1,6 @@
-﻿body {
+﻿.wrapper {
   background-color: #f5f5f5;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.wrapper {
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 
 .headermain {
@@ -19,9 +15,21 @@
   align-items: center;
 }
 
+.emailclas,
+.phoneclas,
+.adressclas {
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .maincontentpc {
     display: none;
+  }
+  .headlinespc {
+    display: none;
+  }
+  .maintxt h1 {
+    text-align: start !important;
   }
   .flags:hover {
     transform: scale(1.5);
@@ -31,28 +39,50 @@
     transition: transform 0.3s ease;
   }
   .headlines {
-    display: flex;
-    margin-left: 30%;
-    margin-top: 0;
-  }
-  .overview {
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 30%;
-  }
-  h3 {
-    font-size: 18px;
-    font-weight: 400;
-  }
-  h2 {
+    display: grid;
     text-align: center;
     margin-bottom: 20px;
   }
+  .headlines .maintxt {
+    margin-top: -5%;
+  }
+  .tech {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: start;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  h5 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+  h6 {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  .lista {
+    text-align: start;
+  }
+  .cvimg {
+    margin-bottom: 20%;
+  }
   .imgclascv {
     display: block;
-    margin-right: 20px;
-    max-width: 30%;
     border-radius: 50px;
+    width: 50%;
   }
   .skills {
     margin-top: 10%;
@@ -65,10 +95,13 @@
     margin-left: 10px;
     color: black;
     font-weight: 400;
+    width: 100px;
   }
   .contactinfo {
     text-decoration: none;
     font-weight: 400;
+    font-size: 10px;
+    width: 300px;
   }
   .phoneclas {
     margin-left: 10px;
@@ -93,42 +126,65 @@
   .maincontentpc {
     display: none;
   }
-  .mainheader {
-    padding-top: 20px;
+  .headlinespc {
+    display: none;
+  }
+  .maintxt h1 {
+    text-align: start !important;
   }
   .flags:hover {
     transform: scale(1.5);
   }
   .flags {
-    height: 40px;
+    height: 28px;
     transition: transform 0.3s ease;
   }
   .headlines {
-    display: flex;
-    margin-left: 30%;
-    margin-top: 0;
-  }
-  .overview {
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 30%;
-  }
-  .cvimg {
-    position: absolute;
-  }
-  h3 {
-    font-size: 18px;
-    font-weight: 400;
-  }
-  h2 {
+    display: grid;
     text-align: center;
     margin-bottom: 20px;
   }
+  .headlines .maintxt {
+    margin-top: 0%;
+  }
+  .tech {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: start;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  h5 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+  h6 {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  .lista {
+    text-align: start;
+  }
+  .cvimg {
+    margin-left: 30%;
+    margin-bottom: 10%;
+  }
   .imgclascv {
     display: block;
-    margin: 0 auto;
-    max-width: 15%;
     border-radius: 50px;
+    width: 50%;
   }
   .skills {
     margin-top: 10%;
@@ -136,18 +192,18 @@
   .skills h2 {
     margin-bottom: 30px;
   }
-  .headermain {
-    display: grid;
-  }
   .emailclas {
     text-decoration: none;
     margin-left: 10px;
     color: black;
     font-weight: 400;
+    width: 100px;
   }
   .contactinfo {
     text-decoration: none;
     font-weight: 400;
+    font-size: 10px;
+    width: 300px;
   }
   .phoneclas {
     margin-left: 10px;
@@ -161,26 +217,44 @@
     color: black;
     font-weight: 400;
   }
+  .headermain {
+    display: grid;
+  }
+  .footer-copywrite {
+    margin-top: 1em;
+  }
 }
 @media (min-width: 992px) {
+  .contactinfo {
+    width: 400px;
+  }
+  .maintxtpcheader {
+    font-size: 50px !important;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
   .maincontent {
+    display: none;
+    width: 100%;
+  }
+  .headlines {
     display: none;
   }
   .maincontentpc {
     display: flex;
-    gap: 20px; /* space between left and right columns */
-    flex-wrap: wrap; /* for responsiveness */
+    gap: 20px;
+    flex-wrap: wrap;
   }
   /* Optional: Set widths for columns */
   .left-column {
     flex: 1;
-    min-width: 300px;
-    max-width: 50%;
+    margin-right: 10%;
+    margin-left: 50px;
   }
   .right-column {
     flex: 1;
-    min-width: 300px;
-    max-width: 50%;
+    margin-left: 10%;
+    margin-right: -50px;
   }
   .left-column,
   .right-column {
@@ -189,36 +263,68 @@
   .imgclascv {
     display: block;
     margin: 0 auto;
-    max-width: 10%;
+    max-width: 25%;
     border-radius: 50px;
   }
-  .flags:hover {
-    transform: scale(1.5);
+  .flag-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
   }
-  .flags {
-    height: 40px;
+  .flag {
+    width: 80px; /* or any size */
+    height: auto;
+    display: block; /* important: ensures full area is inside the anchor */
     transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  .flag:hover {
+    transform: scale(1.2);
+  }
+  .swelink {
+    background-color: green;
+    width: 500px;
+    height: 500px;
   }
   .headlines {
-    display: flex;
-    margin-left: 30%;
-    margin-top: 0;
-  }
-  .overview {
+    display: grid;
     text-align: center;
-    margin-bottom: 10px;
-    margin-top: 30%;
+    margin-top: 0;
+    margin-bottom: 10%;
   }
-  .cvimg {
-    position: absolute;
+  .headerlinksflags {
+    overflow: visible;
+    cursor: pointer;
   }
-  h3 {
-    font-size: 18px;
-    font-weight: 400;
+  .tech {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: start;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
   }
   h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  h5 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+  h6 {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  .lista {
+    text-align: start;
   }
   .skills {
     margin-top: 10%;
@@ -226,30 +332,30 @@
   .skills h2 {
     margin-bottom: 30px;
   }
-  footer .footermain {
-    display: grid;
-    margin-left: 10%;
-  }
   .emailclas {
     text-decoration: none;
     margin-left: 10px;
     color: black;
     font-weight: 400;
-  }
-  .contactinfo {
-    text-decoration: none;
-    font-weight: 400;
+    font-size: 24px;
   }
   .phoneclas {
+    margin-top: 50px;
     margin-left: 10px;
     text-decoration: none;
     color: black;
     font-weight: 400;
+    font-size: 24px;
   }
   .adressclas {
     margin-left: 10px;
     text-decoration: none;
     color: black;
     font-weight: 400;
+    font-size: 24px;
+  }
+  footer .footermain {
+    display: grid;
+    margin-left: 10%;
   }
 }

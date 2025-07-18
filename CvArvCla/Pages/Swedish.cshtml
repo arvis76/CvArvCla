@@ -1,109 +1,269 @@
 ﻿@page
-
+@model CvArvCla.Pages.IndexModel
+@{
+    ViewData["Title"] = "CV";
+}
 <main>
     <div class="container">
         <div class="headlines">
-            <div class="overview">
-                <h1>CV Clas Arvemark</h1>
-                <h5>Junior webbutvecklare</h5>
-            </div>
-            <div class="cvimg">
-                <img class="imgclascv" src="images/Bildclas.jpg" />
-            </div>
+                <h1 >CV Clas Arvemark</h1>
+                <h4 class="maintxt">Junior webbutvecklare</h4>
         </div>
-        <div class="maincontent">
-
+       <div class="maincontent">
             <div class="summary">
-                <h2>Professionell Sammanfattning</h2>
-                <h3>
-                    Jag är en engagerad och nyfiken webbutvecklare med stark praktisk erfarenhet genom akademiska projekt och egna utvecklingsarbeten.<br />
-                    Jag har nyligen avslutat en omfattande .NET Web Developer-utbildning och har genom intensivt projektbaserat lärande byggt upp en kompetens motsvarande två års praktisk erfarenhet.<br />
-                    Min expertis omfattar fullstackutveckling med C#, ASP.NET och moderna JavaScript-ramverk som React, Next.js och Node.js.<br />
-                    Jag har utvecklat responsiva webbapplikationer, implementerat databasförst-lösningar med SQL Server och MySQL, samt använt Azure för molndistribution och CI/CD-pipelines.<br />
-                    Jag behärskar frontend-utveckling med React (inklusive React Hooks), TypeScript, Vite och Blazor, samt utveckling av plattformsoberoende applikationer med WPF och .NET MAUI.<br />
-                    Jag har även erfarenhet av mikrotjänst-arkitektur och integration av CMS (Umbraco).<br />
-                    Dessutom utforskar jag aktivt AI-verktyg och automatiserade arbetsflöden för att förbättra utvecklingseffektivitet och användarengagemang.<br />
-                    Med en bakgrund inom kundsupport och teamarbete har jag starka kommunikationsförmågor, god anpassningsförmåga och en passion för kontinuerligt lärande.<br />
-                    Jag ser fram emot att bidra till framåtblickande utvecklingsteam och hjälpa till att bygga skalbara, moderna webbapplikationer.<br />
-                </h3>
+                <h1>Professionell Sammanfattning</h1>
+                <h5>
+                    Jag är en engagerad och nyfiken webbutvecklare med praktisk erfarenhet från akademiska projekt och egna utvecklingsinitiativ.<br />
+                    Jag har nyligen avslutat en omfattande utbildning till .NET Webbutvecklare och har genom intensiva, projektbaserade studier byggt upp en kompetens motsvarande två års praktisk erfarenhet.<br />
+                    Jag har kompetens inom fullstackutveckling med C#, ASP.NET samt moderna JavaScript-ramverk som React, Next.js och Node.js.<br />
+                    Jag har utvecklat responsiva webbapplikationer, implementerat lösningar med database-first-metodik i SQL Server och MySQL, samt använt Azure för molndistribution och CI/CD pipelines.<br />
+                    Jag är skicklig på att bygga front-end-gränssnitt med React (inkl. React Hooks), TypeScript, Vite och Blazor, samt att skapa plattformsoberoende applikationer med WPF och .NET MAUI.<br />
+                    Jag har även erfarenhet av mikrotjänstarkitektur och integration av CMS (Umbraco).<br />
+                    Utöver detta utforskar jag aktivt AI-verktyg och automatiseringsflöden för att effektivisera utvecklingsarbete och förbättra användarupplevelser.<br />
+                    Med bakgrund inom kundsupport och teamarbete har jag starka kommunikationsförmågor, hög anpassningsförmåga och ett brinnande intresse för kontinuerligt lärande.<br />
+                    Jag ser fram emot att bidra till innovativa utvecklingsteam och skapa skalbara, moderna webblösningar.<br />
+                </h5>
             </div>
-            <div class="skills">
-                <h2>Färdigheter</h2>
-                <h6>Webbutveckling</h6>
-                <p>Fullstack .NET-utveckling, moderna JavaScript-ramverk (React, Node.js), React Hooks, Vite, SASS, Bootstrap</p>
-                <h6>Programspråk</h6>
-                <p>C#, JavaScript (ES6+), SQL, HTML5, CSS3</p>
-                <h6>Frontendutveckling</h6>
-                <p>React, responsiv webbdesign, React Hooks, Vite, UI/UX bästa praxis</p>
-                <h6>Backendutveckling:</h6>
-                <p>ASP.NET, Node.js, C# (MVC), API-utveckling, Database-First-metod</p>
-                <h6>Databashantering:</h6>
-                <p>ASP.NET, Node.js, C# (MVC), API-utveckling, Database-First-metod</p>
-                <h6>Plattformsoberoende utveckling:</h6>
-                <p>WPF, MAUI (Multi-platform App UI)</p>
-                <h6>Versionshantering</h6>
-                <p>Git, GitHub, GitLab</p>
-                <h6>Moln & DevOps:</h6>
-                <p>Azure (App Services, Functions), CI/CD, deploy pipelines</p>
-                <h6>AI & Automatisering</h6>
-                <p>Integration av AI-verktyg och arbetsflöden för utvecklingsproduktivitet, automatiserad testning, optimering av kundinteraktioner</p>
-                <h6>Problemlösning & Ledarskap</h6>
-                <p>Stark kommunikation, problemlösningsförmåga och samarbetsförmåga</p>
 
+            <div class="skills">
+                <h1>Kompetenser</h1>
+                <h3>Webbutveckling:</h3>
+                <h5>Fullstack .NET-utveckling, moderna JavaScript-ramverk (React, Next.js, Node.js), Blazor, TypeScript, React Hooks, Vite, SASS, Bootstrap, Mikrotjänstarkitektur, CMS (Umbraco)</h5>
+                <h3>Programmeringsspråk:</h3>
+                <h5>C#, JavaScript (ES6+), TypeScript, SQL, HTML5, CSS3</h5>
+                <h3>Frontend:</h3>
+                <h5>React, Next.js, Blazor, responsiv webbdesign, UI/UX-bästa praxis, Vite, SASS, Bootstrap</h5>
+                <h3>Backend:</h3>
+                <h5>ASP.NET, Node.js, C# (MVC), API-utveckling, mikrotjänster, database-first-approach</h5>
+                <h3>Databashantering:</h3>
+                <h5>SQL Server, MySQL, databasdesign och utveckling</h5>
+                <h3>Plattformsoberoende utveckling:</h3>
+                <h5>WPF, MAUI (.NET Multi-platform App UI)</h5>
+                <h3>Versionshantering:</h3>
+                <h5>Git, GitHub, GitLab</h5>
+                <h3>Molntjänster & DevOps:</h3>
+                <h5>Azure (App Services, Functions), CI/CD, distributionspipelines</h5>
+                <h3>Design- & prototypverktyg:</h3>
+                <h5>Figma, Adobe XD, Adobe Photoshop, GIMP, Adobe Premiere Pro</h5>
+                <h3>AI & Automatisering:</h3>
+                <h5>Integration av AI-verktyg och flöden för produktivitet, testautomatisering och kundoptimering</h5>
+                <h3>Problemlösning & Ledarskap:</h3>
+                <h5>Starka kommunikationsförmågor, problemlösning, teamarbete</h5>
             </div>
             <div class="education">
-                <h2>Utbildning</h2>
-                <h6>EC Utbildning – .NET Webbutvecklare</h6>
+                <h1>Utbildning</h1>
+                <h3>EC Utbildning –<br /> .NET Webbutvecklare</h3>
                 <h6>Yrkeshögskoleexamen</h6>
-                <h6>Aug 2023-Jun 2025</h6>
-                <p>
-                    <ul>
-                        <li>Frontendutveckling</li>
-                        <li>Backendutveckling</li>
-                        <li>Moderna ramverk & verktyg</li>
-                        <li>Versionshantering & samarbete</li>
-                        <li>UI/UX & design</li>
-                    </ul>
-                </p>
-                <h6>Hermods</h6>
-                <p>
-                    <ul>
-                        <li>Webbutveckling nivå 1–3</li>
-                        HTML, CSS, JavaScript
-                        Programmering i C# nivå 1–2
-                        Digitalt skapande & gränssnittsdesign:
-                        WordPress, Photoshop, Illustrator, Adobe XD, YouTube
-                    </ul>
-                </p>
+                <h6>Aug 2023 – Jun 2025</h6>
+                <h3 class="tech">Tekniker & Kompetenser:</h3>
+                <ul>
+                    <li>
+                        <h4 class="lista">Frontendutveckling:</h4>
+                        <h5>HTML5, CSS3, JavaScript (ES6+), TypeScript, React, React Hooks, Blazor, Vite, responsiv webbdesign, UI/UX</h5>
+                    </li>
+                    <li>
+                        <h4 class="lista">Backendutveckling:</h4>
+                        <h5>C#, ASP.NET, Node.js, MVC-arkitektur, API-utveckling, mikrotjänster</h5>
+                    </li>
+                    <li>
+                        <h4 class="lista">Moderna ramverk & verktyg:</h4>
+                        <h5>Next.js, SASS, Bootstrap, MAUI, WPF, Umbraco CMS</h5>
+                    </li>
+                    <li>
+                        <h4 class="lista">Versionshantering & samarbete:</h4>
+                        <h5>Git, GitHub, GitLab, lagarbete, kodgranskningar</h5>
+                    </li>
+                    <li>
+                        <h4 class="lista">Databashantering:</h4>
+                        <h5>SQL Server, MySQL, database-first-metodik</h5>
+                    </li>
+                    <li>
+                        <h4 class="lista">Molntjänster & DevOps:</h4>
+                        <h5>Azure (App Services, Azure Functions), CI/CD-pipelines</h5>
+                    </li>
+                    <li>
+                        <h4 class="lista">Design- & prototypverktyg:</h4>
+                        <h5>Figma, Adobe XD, Adobe Photoshop, GIMP, Adobe Premiere Pro</h5>
+                    </li>
+                    <li>
+                        <h4 class="lista">AI & Automatisering:</h4>
+                        <h5>Integration av AI-verktyg för produktivitet, testautomatisering, och förbättrad kundinteraktion</h5>
+                    </li>
+                    <li>
+                        <h4 class="lista">Samarbete:</h4>
+                        <h5>Agila metoder, teamutveckling, versionshantering, kodgranskningar</h5>
+                    </li>
+                </ul>
+                <h3>Hermods Gymnasium</h3>
+                <ul>
+                    <li>
+                        <h4 class="lista">Webbutveckling nivå 1–3:</h4>
+                        <h5>HTML, CSS, JavaScript</h5>
+                    </li>
+                    <li>
+                        <h4 class="lista">Programmering nivå 1–2:</h4>
+                        <h5>C#</h5>
+                    </li>
+                    <li>
+                        <h4 class="lista">Digitalt skapande & gränssnittsdesign:</h4>
+                        <h5>WordPress, Photoshop, Illustrator, Adobe XD, YouTube</h5>
+                    </li>
+                </ul>
             </div>
-            <div class="experience">
-                <h2>Erfarenhet</h2>
-                <h6>Team Leader – Egencia, Webhelp Malaga</h6>
+           <div class="experience">
+                <h1>Arbetslivserfarenhet</h1>
+                <h3>Teamledare – Egencia, Webhelp Málaga</h3>
                 <h6>Jul 2023 – Sep 2024</h6>
-                <p>Ledd och hanterade det nordiska nattteamet för en global affärsreseplattform. Säkerställde smidiga processer och hög prestation. Höll i coachningar, 1:1-samtal och följde upp KPI:er via WBMI.</p>
-                <h6>Kundsupportspecialist – Egencia & SJ, Webhelp Solna</h6>
+                <h5>Ledde det nordiska nattteamet för en global affärsreseplattform. Ansvarade för drift, coachning, 1:1-samtal och KPI-uppföljning via WBMI.</h5>
+                <h3>Supportspecialist – Egencia & SJ, Webhelp Solna</h3>
                 <h6>Aug 2022 – Jul 2023</h6>
-                <p>Levererade kundservice i världsklass till internationella kunder. Hjälpte till med flygbokningar, hotell och hyrbil.</p>
-
-                <h6>B2B Koordinator</h6>
+                <h5>Levererade högklassig kundservice och hjälpte globala kunder med bokningar av flyg, hotell och hyrbilar.</h5>
+                <h3>B2B-samordnare</h3>
                 <h6>Aug 2020 – Jul 2022</h6>
-                <p>Planerade och koordinerade möten inom fastighet och ventilation. Effektiviserade CRM-system.</p>
-
-                <h6>Fastighetsmäklare – SkandiaMäklarna</h6>
+                <h5>Bokade och samordnade möten inom fastighet och ventilation. Arbetade med CRM-system för att effektivisera processer.</h5>
+                <h3>Fastighetsmäklare – SkandiaMäklarna</h3>
                 <h6>Okt 2016 – Aug 2020</h6>
-                <p>Sålde bostäder och kommersiella fastigheter. Skapade starka kundrelationer och ledde förhandlingar.</p>
-
+                <h5>Sålde bostäder och kommersiella fastigheter, byggde starka kundrelationer och ledde förhandlingar.</h5>
             </div>
             <div class="Languages">
-                <h2>Språk</h2>
-                <p>
+                <h1>Språk</h1>
+                <ul>
+                    <li><strong>Svenska</strong> – Modersmål</li>
+                    <li><strong>Engelska</strong> – Mycket god</li>
+                    <li><strong>Spanska</strong> – Mycket god</li>
+                    <li><strong>Norska</strong> – God</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="maincontentpc">
+            <div class="left-column">
+                <div class="skillspc">
+                    <h1>Kompetenser</h1>
+                    <h3>Webbutveckling:</h3>
+                    <h5>Full-stack .NET-utveckling, moderna JavaScript-ramverk (React, Next.js, Node.js), Blazor, TypeScript, React Hooks, Vite, SASS, Bootstrap, mikrotjänst-arkitektur, CMS (Umbraco)</h5>
+                    <h3>Programmeringsspråk:</h3>
+                    <h5>C#, JavaScript (ES6+), TypeScript, SQL, HTML5, CSS3</h5>
+                    <h3>Frontend-utveckling:</h3>
+                    <h5>React, Next.js, Blazor, responsiv webbdesign, React Hooks, UI/UX-bästa praxis, Vite, SASS, Bootstrap</h5>
+                    <h3>Backend-utveckling:</h3>
+                    <h5>ASP.NET, Node.js, C# (MVC), API-utveckling, mikrotjänster, databasförst-approach</h5>
+                    <h3>Databashantering:</h3>
+                    <h5>SQL Server, MySQL, databasdesign & utveckling</h5>
+                    <h3>Plattformsoberoende utveckling:</h3>
+                    <h5>WPF, MAUI (Multi-platform App UI)</h5>
+                    <h3>Versionshantering:</h3>
+                    <h5>Git, GitHub, GitLab</h5>
+                    <h3>Moln & DevOps:</h3>
+                    <h5>Azure (App Services, Functions), CI/CD, distributionspipelines</h5>
+                    <h3>Design- & prototypverktyg:</h3>
+                    <h5>Figma, Adobe XD, Adobe Photoshop, GIMP, Adobe Premiere Pro</h5>
+                    <h3>AI & Automatisering:</h3>
+                    <h5>Integration av AI-verktyg och arbetsflöden för utvecklingsproduktivitet, automatiserad testning och kundinteraktion</h5>
+                    <h3>Problemlösning & ledarskap:</h3>
+                    <h5>Starka kommunikationsförmågor, problemlösningsförmåga och samarbetskompetens</h5>
+                </div>
+               <div class="educationpc">
+                    <h1>Utbildning</h1>
+                    <h2>EC Utbildning – .NET Webbutvecklare</h2>
+                    <h4>Yrkeshögskoleexamen</h4>
+                    <h6>Aug 2023 – Jun 2025</h6>
+                    <h3>Teknologier & färdigheter:</h3>
                     <ul>
-                        <li>Svenska – Modersmål</li>
-                        <li>Engelska – Mycket god</li>
-                        <li>Spanska – Mycket god</li>
-                        <li>Norska – God</li>
+                        <li>
+                            <h3 class="lista">Frontend-utveckling:</h3>
+                            <h5>HTML5, CSS3, JavaScript (ES6+), TypeScript, React, React Hooks, Blazor, Vite, responsiv design, UI/UX-bästa praxis</h5>
+                        </li>
+                        <li>
+                            <h3 class="lista">Backend-utveckling:</h3>
+                            <h5>C#, ASP.NET, Node.js, MVC-arkitektur, API-utveckling, mikrotjänster</h5>
+                        </li>
+                        <li>
+                            <h3 class="lista">Moderna ramverk & verktyg:</h3>
+                            <h5>Next.js, SASS, Bootstrap, MAUI, WPF, Umbraco CMS</h5>
+                        </li>
+                        <li>
+                            <h3 class="lista">Versionshantering & samarbete:</h3>
+                            <h5>Git, GitHub, GitLab, lagarbete, kodgranskningar</h5>
+                        </li>
+                        <li>
+                            <h3 class="lista">Databashantering:</h3>
+                            <h5>SQL Server, MySQL, databasförst-approach</h5>
+                        </li>
+                        <li>
+                            <h3 class="lista">Moln & DevOps:</h3>
+                            <h5>Azure (App Services, Azure Functions), CI/CD-pipelines</h5>
+                        </li>
+                        <li>
+                            <h3 class="lista">Design- & prototypverktyg:</h3>
+                            <h5>Figma, Adobe XD, Adobe Photoshop, GIMP, Adobe Premiere Pro</h5>
+                        </li>
+                        <li>
+                            <h3 class="lista">AI & Automatisering:</h3>
+                            <h5>Integration av AI-verktyg för produktivitet, testautomatisering och förbättrad kundinteraktion</h5>
+                        </li>
+                        <li>
+                            <h3 class="lista">Samarbete:</h3>
+                            <h5>Agila metoder, teamutveckling, versionshantering och kodgranskningar</h5>
+                        </li>
                     </ul>
-                </p>
+                   <h2>Hermods yrkesgymnasium</h2>
+                    <ul>
+                        <li>
+                            <h3 class="lista">Webbutveckling nivå 1–3:</h3>
+                            <h5>HTML, CSS, JavaScript</h5>
+                        </li>
+                        <li>
+                            <h3 class="lista">Programmering nivå 1–2:</h3>
+                            <h5>C#</h5>
+                        </li>
+                        <li>
+                            <h3 class="lista">Digital skapande & gränssnittsdesign:</h3>
+                            <h5>WordPress, Photoshop, Illustrator, Adobe XD, YouTube</h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Languagespc">
+                    <h1>Språk</h1>
+                    <ul>
+                        <li><strong>Svenska</strong> – Modersmål</li>
+                        <li><strong>Engelska</strong> – Mycket god</li>
+                        <li><strong>Spanska</strong> – Mycket god</li>
+                        <li><strong>Norska</strong> – God</li>
+                    </ul>
+                </div>
+            </div>
+           <div class="right-column">
+                <div class="summarypc">
+                    <h1>Professionell sammanfattning</h1>
+                    <h5>
+                        Jag är en engagerad och nyfiken webbutvecklare med praktisk erfarenhet från akademiska projekt och egna utvecklingsinitiativ.<br />
+                        Genom att nyligen ha genomfört en omfattande .NET-webbutvecklarutbildning har jag byggt en kompetens motsvarande två års erfarenhet via intensiv, projektbaserad inlärning.<br />
+                        Jag behärskar fullstack-utveckling med C#, ASP.NET och moderna JavaScript-ramverk som React, Next.js och Node.js.<br />
+                        Jag har utvecklat responsiva webbapplikationer, implementerat databasförst-lösningar med SQL Server och MySQL samt använt Azure för molnimplementation och CI/CD-pipelines.<br />
+                        Jag är skicklig på att bygga frontend-gränssnitt med React (inkl. React Hooks), TypeScript, Vite och Blazor, samt att utveckla plattformsoberoende appar med WPF och .NET MAUI.<br />
+                        Jag har även erfarenhet av mikrotjänst-arkitektur och CMS-integration (Umbraco).<br />
+                        Dessutom utforskar jag AI-verktyg och automatisering för att förbättra utvecklingseffektivitet och användarengagemang.<br />
+                        Med en bakgrund inom kundsupport och lagarbete har jag starka kommunikationsförmågor, anpassningsförmåga och en passion för ständig inlärning.<br />
+                        Jag ser fram emot att bidra till innovativa utvecklingsteam och bygga skalbara, moderna webbapplikationer.<br />
+                    </h5>
+                </div>
+               <div class="experiencepc">
+                    <h1>Erfarenhet</h1>
+                    <h3>Teamledare – Egencia, Webhelp Malaga</h3>
+                    <h6>Jul 2023 – Sep 2024</h6>
+                    <h5>Ledde det nordiska nattteamet för en global affärsreseplattform, ansvarade för smidiga processer och hög prestation, genomförde coachningsmöten och uppföljningar, samt följde upp KPI:er med WBMI</h5>
+                    <h3>Kundtjänstspecialist – Egencia & SJ, Webhelp Solna</h3>
+                    <h6>Aug 2022 – Jul 2023</h6>
+                    <h5>Levererade förstklassig kundsupport till globala kunder inom resebokning (flyg, hotell, hyrbil)</h5>
+                    <h3>B2B Säljkoordinator</h3>
+                    <h6>Aug 2020 – Jul 2022</h6>
+                    <h5>Bokade möten för fastighets- och ventilationsservice, optimerade CRM-system för effektivitet</h5>
+                    <h3>Fastighetsmäklare – SkandiaMäklarna</h3>
+                    <h6>Okt 2016 – Aug 2020</h6>
+                    <h5>Sålde bostäder och kommersiella fastigheter, byggde starka kundrelationer och ledde förhandlingar</h5>
+                </div>
             </div>
         </div>
     </div>
