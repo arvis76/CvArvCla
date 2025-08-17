@@ -1,12 +1,34 @@
-﻿<header>
+﻿@model CvArvCla.Pages.IndexModel
+
+@if (Model?.MessageSent == true)
+{
+    <div id="likeMessage" class="alert alertmsg alert-success">
+        Thank you! Your like has been registered.
+    </div>
+
+    
+}
+<header>
     <div class="container">
         <div class ="mainheader">
+            
             <div class="Info" >
                 <div class="headerlinksflags">
+                    <div class="likesbtnall">
+                        <p>Do you enjoy this content?</p>
+                        <form method="post" asp-page="/Index" class="likesform">                      
+                            <button type="submit" class="btn btn-likes btn-success">👍 Like</button>
+                        </form>
+                        <p id="likesCounter" class="alertlike">Total likes: <strong>@Model.LikeCount</strong></p>
+                    </div>
                     <a href="https://www.linkedin.com/in/clas-arvemark-177580313ile" target="_blank"><img class="flags" alt="Linkedin" src="/images/linkedin.png" /></a>
                     <a href="/"><img class="flags" src="~/images/unitedKingdomflag.png" alt="English" /></a>
                     <a href="/sv"><img class="flags" src="~/images/SwedishFlas.png" alt="Svenska" /></a>
                     <a href="/es"><img class="flags" src="~/images/spanish.png" alt="Español" /></a>
+                    <div class="like-header-container text-center mt-4">
+                      
+                    </div>
+                
                 </div>
                 <div class="headermain">
                     <p class="contactinfo">
@@ -33,7 +55,7 @@
                 </div>
         </div>
             <div class="cvimg">
-                <img class="imgclascv" src="images/Bildclas.jpg" />
+                <img class="imgclascv" src="images/Bildclas.jpg" alt="Clasfoto" />
            </div>
         </div>
     </div>
